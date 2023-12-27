@@ -18,4 +18,6 @@
 * on windows
     * vim
     * choco
-
+---
+# TODO
+* make setup scripts
