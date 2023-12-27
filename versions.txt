@@ -1,0 +1,10 @@
+tmux 3.2a
+WSL version: 2.0.9.0
+Ubuntu 22.04.3 LTS
+NVIM v0.9.4
+fzf 0.29
+oh-my-posh 18.19.0
+npm 9.2.0
+node v19.3.0
+choco 2.2.2
+vim (windows) 9.0
