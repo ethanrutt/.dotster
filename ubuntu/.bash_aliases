@@ -31,7 +31,7 @@ alias gau='git add -u'
 alias gcmt='git commit -m'
 alias glg='git log'
 alias gpsh='git push'
-alias gpl='git pull'
+alias gpll='git pull'
 
 # allow tmux to use all 256 colors
 alias tmux="tmux -2"
