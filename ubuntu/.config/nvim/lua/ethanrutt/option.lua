@@ -42,3 +42,6 @@ vim.o.termguicolors = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 0
 vim.opt.expandtab = true
+
+-- colorcolumn at 80 chars
+vim.opt.colorcolumn = "80"
