@@ -1,15 +1,5 @@
 vim.g.mapleader = ' '
 
-vim.keymap.set('n', '<leader>sx', vim.cmd.Ex, { desc = '[S]earch with :E[x] (netrw)' })
-
--------------------------------------------------------------------------------
--- Diagnostic keymaps
--------------------------------------------------------------------------------
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
-
 -------------------------------------------------------------------------------
 -- Keymaps for better default experience
 -------------------------------------------------------------------------------
@@ -29,6 +19,26 @@ vim.keymap.set("n", "J", "mzJ`z")
 
 -- Disable Q
 vim.keymap.set("n", "Q", "<nop>")
+
+vim.keymap.set('n', '<leader>sx', vim.cmd.Ex, { desc = '[S]earch with :E[x] (netrw)' })
+
+-------------------------------------------------------------------------------
+-- Quickfix List
+-------------------------------------------------------------------------------
+vim.keymap.set('n', '<Space>co', vim.cmd.copen, { desc = 'Open quickfix list window'})
+vim.keymap.set('n', '<Space>cl', vim.cmd.ccl, { desc = 'Close quickfix list window'})
+vim.keymap.set('n', '<Space>cn', "<cmd>cnext<CR>zz", { desc = 'Go to next item'})
+vim.keymap.set('n', '<Space>cp', "<cmd>cnext<CR>zz", { desc = 'Go to previous item'})
+vim.keymap.set('n', '<Space>cwn', vim.cmd.cnew, { desc = 'Get [n]ext quickfix [w]indow'})
+vim.keymap.set('n', '<Space>cwp', vim.cmd.cnew, { desc = 'Get [p]revious quickfix [w]indow'})
+
+-------------------------------------------------------------------------------
+-- Diagnostic keymaps
+-------------------------------------------------------------------------------
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -------------------------------------------------------------------------------
 -- Keep cursor in the middle when jumping
