@@ -19,13 +19,16 @@ require('lazy').setup({
   'ntpeters/vim-better-whitespace',
 
   -- Autopairs for html tags
-  "alvan/vim-closetag",
+  'alvan/vim-closetag',
 
   -- Useful plugin to show you pending keybinds.
   'folke/which-key.nvim',
 
-  -- "gc" to comment visual regions/lines
-  'numToStr/Comment.nvim',
+  {
+    -- 'gc' to comment visual regions/lines
+    'numToStr/Comment.nvim',
+    opts = {},
+  },
 
   {
     -- Highlight, edit, and navigate code
@@ -102,7 +105,7 @@ require('lazy').setup({
   {
     -- Autopairs for '(' '[' '{' '"' "'"
     'windwp/nvim-autopairs',
-    event = "InsertEnter",
+    event = 'InsertEnter',
     opts = {},
   },
 
