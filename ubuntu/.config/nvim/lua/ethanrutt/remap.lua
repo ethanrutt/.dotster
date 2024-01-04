@@ -22,6 +22,16 @@ vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set('n', '<leader>sx', vim.cmd.Ex, { desc = '[S]earch with :E[x] (netrw)' })
 
+-- while highlighting and pasting, don't yank into register
+vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "[p]aste without yanking"})
+
+-- yank into system clipboard
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]], { desc = "[y]ank into system clipboard"})
+vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "[Y]ank into system clipboard"})
+
+-- delete into void register
+vim.keymap.set({"n", "v"}, "<leader>d", [["_d]], { desc = "[d]elete into void register"})
+
 -------------------------------------------------------------------------------
 -- Quickfix List
 -------------------------------------------------------------------------------
