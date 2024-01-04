@@ -39,8 +39,6 @@ vim.keymap.set('n', '<Space>co', vim.cmd.copen, { desc = 'Open quickfix list win
 vim.keymap.set('n', '<Space>cl', vim.cmd.ccl, { desc = 'Close quickfix list window'})
 vim.keymap.set('n', '<Space>cn', "<cmd>cnext<CR>zz", { desc = 'Go to next item'})
 vim.keymap.set('n', '<Space>cp', "<cmd>cnext<CR>zz", { desc = 'Go to previous item'})
-vim.keymap.set('n', '<Space>cwn', vim.cmd.cnew, { desc = 'Get [n]ext quickfix [w]indow'})
-vim.keymap.set('n', '<Space>cwp', vim.cmd.cnew, { desc = 'Get [p]revious quickfix [w]indow'})
 
 -------------------------------------------------------------------------------
 -- Diagnostic keymaps
@@ -63,15 +61,3 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-f>", "<C-f>zz")
 vim.keymap.set("n", "<C-b>", "<C-b>zz")
 
--------------------------------------------------------------------------------
--- [[ Highlight on yank ]]
--------------------------------------------------------------------------------
--- See `:help vim.highlight.on_yank()`
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
-vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
-})
