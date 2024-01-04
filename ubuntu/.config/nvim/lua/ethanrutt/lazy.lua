@@ -15,6 +15,17 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- Highlight and Trim whitespace
+  'ntpeters/vim-better-whitespace',
+
+  -- Autopairs for html tags
+  "alvan/vim-closetag",
+
+  -- Useful plugin to show you pending keybinds.
+  'folke/which-key.nvim',
+
+  -- "gc" to comment visual regions/lines
+  'numToStr/Comment.nvim',
 
   {
     -- Highlight, edit, and navigate code
@@ -79,9 +90,6 @@ require('lazy').setup({
     },
   },
 
-  -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
-
   {
     -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
@@ -91,26 +99,12 @@ require('lazy').setup({
     opts = {},
   },
 
-  -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
-
   {
     -- Autopairs for '(' '[' '{' '"' "'"
     'windwp/nvim-autopairs',
     event = "InsertEnter",
     opts = {},
   },
-
-  {
-    -- Autopairs for html tags
-    "alvan/vim-closetag",
-  },
-
-  {
-    -- Highlight and Trim whitespace
-    'ntpeters/vim-better-whitespace',
-  },
-
 
   ---------------------------
   -- Theme related plugins --
