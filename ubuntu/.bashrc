@@ -103,5 +103,5 @@ fi
 # PATH=$(echo "$PATH" | sed -e 's|:/lib/nvim-linux64/bin/lib/nvim-linux64/bin||')
 
 # terminal theme with oh-my-posh
-POSH_THEMES="/mnt/c/users/skate/AppData/Local/Programs/oh-my-posh/themes"
+POSH_THEMES="/home/quikhedster/.themes"
 eval "$(oh-my-posh init bash --config $POSH_THEMES/clean-detailed.omp.json)"

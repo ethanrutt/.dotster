@@ -26,11 +26,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# java path
-export JAVA_HOME="/usr/lib/jdk-17"
-#export JAVA_HOME="usr/lib/jdk-21"
-
-# add variables to path
-export PATH="$PATH:/lib/nvim-linux64/bin"
-export PATH="$PATH:$JAVA_HOME/bin"
-export PATH="$PATH:/opt/apache-maven-3.9.5/bin"
+# # java path
+# export JAVA_HOME="/usr/lib/jdk-17"
+# #export JAVA_HOME="usr/lib/jdk-21"
+# 
+# # add variables to path
+# export PATH="$PATH:/lib/nvim-linux64/bin"
+# export PATH="$PATH:$JAVA_HOME/bin"
+# export PATH="$PATH:/opt/apache-maven-3.9.5/bin"

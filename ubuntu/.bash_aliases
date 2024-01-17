@@ -39,6 +39,9 @@ alias tls='tmux ls'
 
 alias q='exit'
 
+# python bruh moment
+alias python='python3'
+
 # ls on cd
 function cd {
     builtin cd "$@" && ll
