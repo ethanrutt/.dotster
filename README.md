@@ -10,6 +10,7 @@
 * on both
     * fzf
     * oh-my-posh
+        * make sure to set the themes directory in .bashrc/powershellprofile.ps1
     * git
 * on WSL
     * nvim
@@ -39,7 +40,7 @@ PS> $profile | select *
     * install vscodium and nvim with choco
     * point to executable (was weird error with escape characters since windows filepaths contain `\`, make sure this is good in settings.json)
     * point to init.lua (should be in Appdata/local/nvim)
-* note: have to go into keybindings.json and change `<C-q>` to send `<C-v>` to nvim so that I can enter visual block mode with `<C-v>` 
+* note: have to go into keybindings.json and change `<C-q>` to send `<C-v>` to nvim so that I can enter visual block mode with `<C-v>`
 ---
 # TODO
 * make setup scripts
