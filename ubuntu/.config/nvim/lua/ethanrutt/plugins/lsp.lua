@@ -77,7 +77,6 @@ return {
             pyright = {},
             tsserver = {},
             bashls= {},
-            cmake = {},
             cssls = {},
             jdtls = {},
             html = { filetypes = { 'html', 'twig', 'hbs'} },
