@@ -39,6 +39,10 @@ PS> $profile | select *
     * install vscodium and nvim with choco
     * point to executable (was weird error with escape characters since windows filepaths contain `\`, make sure this is good in settings.json)
     * point to init.lua (should be in Appdata/local/nvim)
+* VSCodium Extensions
+    * VSCode Neovim - asvetliakov  
+    * Trailing Spaces - shardulm94
+    * Misc Themes and LSP's
 * note: have to go into keybindings.json and change `<C-q>` to send `<C-v>` to nvim so that I can enter visual block mode with `<C-v>` 
 ---
 # TODO
