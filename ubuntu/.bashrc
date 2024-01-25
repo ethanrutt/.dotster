@@ -104,4 +104,4 @@ fi
 
 # terminal theme with oh-my-posh
 POSH_THEMES="/home/csce438/.themes"
-eval "$(oh-my-posh init bash --config $POSH_THEMES/bubblesline.omp.json)"
+eval "$(oh-my-posh init bash --config $POSH_THEMES/amro.omp.json)"
