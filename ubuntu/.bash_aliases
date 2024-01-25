@@ -26,7 +26,6 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 
 # git aliases
-alias gs='git status'
 alias gau='git add -u'
 alias gcmt='git commit -m'
 alias glg='git log'
@@ -55,3 +54,7 @@ if [ -f ~/.tmuxster.bash ]; then
     source ~/.tmuxster.bash
 fi
 
+# 438 bash_aliases
+export MY_INSTALL_DIR=$HOME/.local
+export PATH=$MY_INSTALL_DIR/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/lib
