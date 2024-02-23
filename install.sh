@@ -11,8 +11,9 @@ sudo apt install python
 sudo apt install npm
 sudo apt install nvim
 sudo apt install tmux
-sudo apt install oh-my-posh
 sudo apt install fzf
+
+curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 
 echo "cloning oh-my-posh"
 echo "!!!"
