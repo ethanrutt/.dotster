@@ -55,5 +55,8 @@ else
 
 	-- unbind leader key by itself
 	vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+
+    -- make C-c same as escape
+    vim.keymap.set({ 'n', 'i' }, '<C-c>', '<Esc>')
 end
 

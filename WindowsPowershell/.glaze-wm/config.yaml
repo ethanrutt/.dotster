@@ -21,7 +21,7 @@ general:
   # *Strongly* recommended to set to 'false'. Whether to globally enable/disable
   # window transition animations (on minimize, close, etc). Set to 'unchanged'
   # to make no setting changes.
-  window_animations: "unchanged"
+  window_animations: "false"
 
 gaps:
   # Gap between adjacent windows.
@@ -47,30 +47,26 @@ bar:
   opacity: 1.0
   background: "#20242cc4"
   foreground: "#ffffff"
-  font_family: "Segoe UI"
+  font_family: "Agave Nerd Font"
   font_size: "13px"
   padding: "4px 6px"
   offset_x: "0"
   offset_y: "0"
   border_radius: "0"
+  component_separator:
+    label: " | "
   components_left:
     - type: "workspaces"
       focused_workspace_background: "#ffffff33"
       displayed_workspace_background: "#00000033"
       default_workspace_background: "transparent"
-  components_center:
-    - type: "window title"
   components_right:
-    - type: "tiling direction"
-      label_horizontal: "⮂"
-      label_vertical: "⮁"
-      background: "#ffffff33"
-      margin: "0 4px"
-      padding: "0 8px"
-    - type: "binding mode"
-      background: "#ffffff33"
+    - type: "battery"
+      label_draining: "{battery_level}%"
+      label_charging: "{battery_level}% 󰠠"
       margin: "0 4px 0 0"
-      padding: "0 8px"
+    - type: "clock"
+      time_formatting: "hh:mm tt 󰥔  ddd MMM d  "
 
 workspaces:
   - name: "1"
@@ -142,22 +138,18 @@ keybindings:
 
   # Resize focused window by a percentage or pixel amount.
   - command: "resize width -2%"
-    binding: "Alt+U"
+    binding: "Alt+Shift+Oemcomma"
   - command: "resize width +2%"
-    binding: "Alt+P"
+    binding: "Alt+Shift+OemPeriod"
   - command: "resize height +2%"
-    binding: "Alt+O"
+    binding: "Alt+Shift+Oemplus"
   - command: "resize height -2%"
-    binding: "Alt+I"
+    binding: "Alt+OemMinus"
 
   # As an alternative to the resize keybindings above, resize mode enables resizing via
   # HJKL or arrow keys. The binding mode is defined above with the name "resize".
   - command: "binding mode resize"
     binding: "Alt+R"
-
-  # Change tiling direction. This determines where new tiling windows will be inserted.
-  - command: "tiling direction toggle"
-    binding: "Alt+V"
 
   # Change focus between floating / tiling windows.
   - command: "focus mode toggle"
@@ -177,11 +169,11 @@ keybindings:
 
   # Close focused window.
   - command: "close"
-    binding: "Alt+Shift+Q"
+    binding: "Alt+Shift+C"
 
   # Kill GlazeWM process safely.
   - command: "exit wm"
-    binding: "Alt+Shift+E"
+    binding: "Alt+Shift+Q"
 
   # Re-evaluate configuration file.
   - command: "reload config"
@@ -189,7 +181,7 @@ keybindings:
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start Windows Terminal and Git Bash respectively.
-  - command: "exec cmd"
+  - command: "exec wt"
     binding: "Alt+Enter"
 
   # Focus the workspace that last had focus.
